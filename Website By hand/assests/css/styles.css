@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    font-family: "Yanone Kaffeesatz";
+     
+  }
+  
+  /* Navbar */
+.navbar {
+    position: fixed;
+    background-color: #060d0d;
+    overflow: hidden;
+    z-index: 9999;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    
+  }
+  
+  .navbar li {
+    display: inline-block;
+  }
+  
+  .navbar a {
+    display: block;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+  }
+  /* Highlight active */
+.navbar li a.active,
+.navbar li a:focus {
+  color: #e31937;
+  background-color: transparent; 
+}
+
+
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+  }
+  
+  section.active {
+    background-color: #d3d3d3;
+    transition: background-color 0.3s;
+  }
+/* Styles for the first section */
+.section1 {
+    padding: 75px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 45px;
+    margin-top: 45px;
+  }
+  /*sevices section*/
+  
+#services {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+  }
+  
+  #services h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section2 {
+    background-color: #474e5d;
+  }
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .service {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .service img {
+    max-width: 80px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #666;
+    flex-grow: 1;
+  margin-top: 10px;
+  }
+  
+/* Section 3 Styling */
+.section3 {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .section3 h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section3 p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .work {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .work h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .work p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .work a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .work a:hover {
+    background-color: #0056b3;
+  }
+  
+  .responsive {
+    flex-basis: calc(33.333% - 30px);
+    max-width: 400px;
+    margin: 15px;
+  }
+  
+  .gallery {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery:hover img {
+    transform: scale(1.05);
+  }
+  
+  .desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .work-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .responsive {
+      flex-basis: calc(100% - 30px);
+    }
+  }
+
+  /* CSS for Contact section */
+.section4 {
+    background-color: #f9f9f9; /* Light gray background color */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .section4 h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+  }
+  
+  /* Style for the form */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Light gray divider line */
+    margin: 20px 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555; /* Dark gray label color */
+  }
+  
+  form input[type="text"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #e31937; /* Red submit button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #c9122f; /* Darker red on hover */
+  }
+
+  /* Footer */
+footer {
+    background-color: #060d0d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .fa-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .fa-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .fa-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #e31937;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.5;
+  }
+  
+  .back-to-top.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer p {
+      font-size: 14px;
+    }
+  }
+
+  /* CSS styles for the back to top button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #e31937;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.5;
+  }
+  
+  .back-to-top.show {
+    display: block;
+    opacity: 1;
+  }

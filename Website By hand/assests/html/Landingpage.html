@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website By Hand</title>
+    <!---custom css link------>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <!-- Navigation menu -->
+        <ul class="navbar" id="navbar">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+
+
+    <section id="about" class="section1" data-nav="section1">
+        <h2>About</h2>
+        <!-- Content for Section 1 -->
+
+        <p class="center">"Welcome to Website by hand Solutions, your partner in transforming small businesses across Kansas,
+            Texas, and neighboring states into digital successes. Our mission is to empower local enterprises with
+            cutting-edge design and frontend development expertise. We specialize in guiding you through the four
+            essential steps of creating a responsive website that leaves a lasting impact. From understanding your
+            unique business needs to crafting engaging user experiences, we're here to ensure your online presence
+            shines. Elevate your brand, connect with your audience, and thrive in the digital landscape with Ideal Web
+            Solutions by your side."</p><br>
+
+    </section>
+
+
+    <section id="services" class="section2" data-nav="section2">
+        <h2>Services</h2>
+        <!-- Content for Section 2 -->
+        <p>Welcome to our comprehensive suite of services designed to elevate your small business in Kansas, Texas, and surrounding states:</p>
+  <div class="services-container">
+    <div class="service">
+      <img src="../images/testing.png" alt="Service1">
+      <h3>Responsive Web Design</h3>
+      <p>Create visually stunning and user-friendly websites that adapt seamlessly to different devices and screen sizes.</p>
+    </div>
+    <div class="service">
+      <img src="../images/application.png" alt="Service2">
+      <h3>Frontend Development</h3>
+      <p>Build robust and interactive frontend components using the latest technologies and industry best practices.</p>
+    </div>
+  </div>
+    </section>
+
+    <section id="work" class="section3" data-nav="section3">
+        <h2>Work</h2>
+        <p>Explore my portfolio of past projects and experience:</p>
+        <!-- Content for Section 3 -->
+
+        <div class="work-container">
+            <div class="work">
+              <h3>Resume</h3>
+              <p>View my detailed work history and skills in my resume:</p>
+              <a href="../html/resume.html" target="_blank">Download Resume</a>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="../Images/portfolio project.PNG">
+                <img src="../Images/portfolio project.PNG" alt="portfolio" width="35%" height="45%">
+              </a>
+              <div class="desc">This project was a templed idea i had for my first portfolio it includes work history and
+                links for each html page i created giving me practice for this project</div>
+            </div>
+          </div>
+        
+         
+            
+            <!-- Add more project sections as needed -->
+          </div>
+    </section>
+
+    <section id="contact" class="section4"  data-nav="section4">
+        <h2>Contact</h2>
+        <!-- Content for Section 4 -->
+        <form>
+
+            <hr>
+
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" placeholder="Your name.." name="firstname" required>
+
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" placeholder="Your name.." name="lastname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Your Email.." name="email" required>
+
+            <label for="state">State</label>
+            <select id="state" name="state">
+                <option value="texas">Texas</option>
+                <option value="colorado">Colorado</option>
+                <option value="kansas">Kansas</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+
+
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Author: Chauntez Crenshaw<br>
+                Email: Websitebyhand@gmail.com<br>
+                Phone: (316)339-8325</p>
+            <ul class="fa-links">
+                <li><a href="https://www.linkedin.com/in/chauntez-c-320a721ba/" class="fab fa-linkedin"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100094094806584" class="fab fa-facebook"></a></li>
+            </ul>
+            <p>&copy; 2023 All rights reserved.<br>
+                Site designed and developed by Chauntez Crenshaw.</p>
+
+        </div>
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
